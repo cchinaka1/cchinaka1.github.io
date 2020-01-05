@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Responsive Portfolio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/bootstrap4.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap" rel="stylesheet">
+</head>
+<body data-spy="scroll" data-target="#navbarResponsive">
+
+       
+        <div id="Home">
+            <!-- navigation -->
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+<!-- Image and text -->
+         <a class="navbar-brand" href="#">
+            <img src="data:image/png;base64,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" width="40" height="40" class="d-inline-block align-top" alt="">
+                Chidimma Chinaka
+                         </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive" >
+                    <ul class="navbar-nav ml-auto" >
+                        <li class="nav-item">
+                            <a href="#Home" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#About" class="nav-link">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#Portfolio" class="nav-link">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#Contact" class="nav-link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+              </nav>
+            
+            <!-- End navigation -->
+             
+                     <div class="landing">
+                         <div class="home-wrap">
+                             <div class="home-inner"></div>
+                         </div>
+                     </div>
+                     <div class="caption text-center">
+                         <h1>Chidimma Chinaka</h1>
+                         <h3>Welcome!</h3>
+                         <a href="#About"class="btn btn-primary">Click Here</a>
+                      </div>
+        </div>
+        
+    <!-- Start About section -->
+       
+        <div id="About" >
+        
+            <div class="container" style="background-color: rgba(255,255,255,0.3);">
+              <div class="text-info display-4 text-center">About Me</div>
+              <hr class="About">
+            <div id="main" class="row">
+
+                <div class="col-lg-4 col-md-12 pt-5">
+                    <p > <span class="letter">I</span> am a recent graduate from Texas Tech University. My background in community involvement and love for helping others, joined with my natural leadership attributes , academic accomplishments, and experience qualify me for a career in countless fields. In 2016, while attending Texas Tech, I co-founded and served as a two term President of an organization which promotes philanthropy, empowerment, and leadership. I am proud to say that the organization, is still thriving today. In my free time, and as another source of income, I create innovative content through writing and video blogging. 
+                    </p>
+                </div>
+                <div class="col-lg-4 col-md-12 text-center "><img class="mb-2 img" src="https://media.licdn.com/dms/image/C4E03AQE9b2fYcSitHA/profile-displayphoto-shrink_200_200/0?e=1583971200&v=beta&t=iG2YT9_O3ZI6MvkC1XeJhquQckd7MbwBpQlXiaypnhs" alt="">
+                     <p>I am a recent graduate from Texas Tech University. My background in community involvement and love for helping others, joined with my natural leadership attributes , academic accomplishments, and experience qualify me for a career in countless fields. In 2016, while attending Texas Tech, I co-founded and served as a two term President of an organization which promotes philanthropy, empowerment, and leadership. I am proud to say that the organization, is still thriving today. In my free time, and as another source of income, I create innovative content through writing and video blogging. 
+                     </p>
+                </div>
+                <div class="col-lg-3 col-md-12 pt-5 text-center">
+                    <p>I am a recent graduate from Texas Tech University. My background in community involvement and love for helping others, joined with my natural leadership attributes , academic accomplishments, and experience qualify me for a career in countless fields. In 2016, while attending Texas Tech, I co-founded and served as a two term President of an organization which promotes philanthropy, empowerment, and leadership. I am proud to say that the organization, is still thriving today. In my free time, and as another source of income, I create innovative content through writing and video blogging. 
+                   </p>
+                </div>
+            </div>
+         </div>
+
+        </div>
+
+    <!-- End about section -->
+
+    <!-- Start Portfolio section -->
+
+       
+        <div id="Portfolio">
+            <div class="container ">
+                <div class="text-info display-4 text-center">Portfolio</div>
+                <hr class="About">
+
+                
+                <div class="container-fluid bg-3 text-center">    
+                    <div class="row">
+                      <div class="col-sm-3">
+                        <p><strong>Money</strong></p>
+                        <img src="https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F548992%2Fgettyimages-1048083680.jpg&w=150&op=resize" class="img-responsive" style="width:100%" alt="Image" class="img-responsive" style="width:100%" alt="Image">
+                      </div>
+                      <div class="col-sm-3"> 
+                        <p><strong>Money</strong></p>
+                        <img src="https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F548992%2Fgettyimages-1048083680.jpg&w=150&op=resize" class="img-responsive" style="width:100%" alt="Image" class="img-responsive" style="width:100%" alt="Image">
+                      </div>
+                      <div class="col-sm-3"> 
+                        <p><strong>Money</strong></p>
+                        <img src="https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F548992%2Fgettyimages-1048083680.jpg&w=150&op=resize" class="img-responsive" style="width:100%" alt="Image" class="img-responsive" style="width:100%" alt="Image">
+                      </div>
+                      <div class="col-sm-3">
+                        <p><strong>Money</strong></p>
+                        <img src="https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F548992%2Fgettyimages-1048083680.jpg&w=150&op=resize" class="img-responsive" style="width:100%" alt="Image">
+                      </div>
+                      <div class="container-fluid bg-3 text-center">    
+                        <div class="row">
+                          <div class="col-sm-3">
+                            <p><strong>Money</strong></p>
+                            <img src="https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F548992%2Fgettyimages-1048083680.jpg&w=150&op=resize" class="img-responsive" style="width:100%" alt="Image" class="img-responsive" style="width:100%" alt="Image">
+                          </div>
+                          <div class="col-sm-3"> 
+                            <p><strong>Money</strong></p>
+                            <img src="https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F548992%2Fgettyimages-1048083680.jpg&w=150&op=resize" class="img-responsive" style="width:100%" alt="Image" class="img-responsive" style="width:100%" alt="Image">
+                          </div>
+                          <div class="col-sm-3"> 
+                            <p><strong>Money</strong></p>
+                            <img src="https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F548992%2Fgettyimages-1048083680.jpg&w=150&op=resize" class="img-responsive" style="width:100%" alt="Image" class="img-responsive" style="width:100%" alt="Image">
+                          </div>
+                          <div class="col-sm-3">
+                            <p><strong>Money</strong></p>
+                            <img src="https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F548992%2Fgettyimages-1048083680.jpg&w=150&op=resize" class="img-responsive" style="width:100%" alt="Image">
+                          </div>
+                          <div class="col-sm-3">
+                            <p><strong>Money</strong></p>
+                            <img src="https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F548992%2Fgettyimages-1048083680.jpg&w=150&op=resize" class="img-responsive" style="width:100%" alt="Image" class="img-responsive" style="width:100%" alt="Image">
+                          </div>
+                          <div class="col-sm-3"> 
+                            <p><strong>Money</strong></p>
+                            <img src="https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F548992%2Fgettyimages-1048083680.jpg&w=150&op=resize" class="img-responsive" style="width:100%" alt="Image" class="img-responsive" style="width:100%" alt="Image">
+                          </div>
+                          <div class="col-sm-3"> 
+                            <p><strong>Money</strong></p>
+                            <img src="https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F548992%2Fgettyimages-1048083680.jpg&w=150&op=resize" class="img-responsive" style="width:100%" alt="Image" class="img-responsive" style="width:100%" alt="Image">
+                          </div>
+                          <div class="col-sm-3">
+                            <p><strong>Money</strong></p>
+                            <img src="https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F548992%2Fgettyimages-1048083680.jpg&w=150&op=resize" class="img-responsive" style="width:100%" alt="Image">
+                          </div>  
+                        </div>
+                      </div><br><br>
+                    </div>
+                  </div><br><br>
+             </div>
+            </div>
+       
+        <div id="Contact">
+         <div class="container bg-white pb-3 pt-2">
+            <div class="text-info display-4 text-center">Contact Me</div>
+            <hr class="About">
+            <form action="/action_page.php">
+               <div class="form-group">
+                 <label for="Name"><strong>Full Name:</strong></label>
+                 <input type="text" class="form-control bg-light" placeholder="John Smith" id="email">
+               </div>
+               <div class="form-group">
+                 <label for="Email"><strong>Email address:</strong></label>
+                 <input type="email" class="form-control bg-light" placeholder="Example@gmail.com" id="">
+               </div>
+               <div class="form-group">
+                  <label for=""><strong>Message:</strong></label>
+                  <textarea name="" id="" cols="30" rows="10" class="form-control bg-light"></textarea>
+               </div>
+               <button type="submit" class="btn  btn-lg  btn-outline-info">Submit</button>
+             </form>
+           
+         </div>
+            
+        </div>
+
+    <!-- Start Info -->
+     <div id="Info">
+         <h3 class=" text-center  pt-4">Contact Info</h3>
+         <pre class="text-center "><strong>Phone: </strong>888-888-8888</pre>
+         <pre class="text-center  m-0"><Strong>Email: </Strong>info.chdi@aol.com</pre>
+         <div class="text-center p-4">
+            <a href=""><i class="fab fa-facebook fa-2x text-primary bg-white p-2"></i></a>
+            <a href=""><i class="fab fa-twitter-square fa-2x text-warning bg-white p-2"></i></a>
+            <a href=""><i class="fab fa-youtube fa-2x text-danger bg-white p-2"></i></a>
+         </div>
+
+     </div>
+
+
+    <!-- End Info -->
+
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
