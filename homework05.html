@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    
+    <title>Work Day Scheduler</title>
+    
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    
+    <script src="https://kendo.cdn.telerik.com/2020.1.114/js/kendo.all.min.js"></script>
+    
+    <link rel="stylesheet" href="https://kendo.cdn.telerik.com/2020.1.114/styles/kendo.default-v2.min.css"/>
+</head>
+
+<body>
+  
+<div id="scheduler"></div>
+
+<script>
+$("#scheduler").kendoScheduler({
+  date: new Date("2020/1/28"),
+  showWorkHours: true,
+  views: ["day"],
+  dataSource: [
+    {
+      id: 1,
+      start: new Date("2020/1/28 08:00 AM"),
+      end: new Date("2020/1/28 09:00 AM"),
+      title: "Interview"
+    }
+  ]
+});
+
+</script>
+</body>
+
+</html>
